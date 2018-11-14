@@ -2,7 +2,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.3.114:3306/har-hshare?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull
+    url: jdbc:mysql://127.0.0.1:3306/har-hshare?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull
     username: root
     password: root
     type: com.alibaba.druid.pool.DruidDataSource #指定数据源类型为连接池

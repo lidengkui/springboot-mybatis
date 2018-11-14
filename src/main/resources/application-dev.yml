@@ -9,7 +9,7 @@ spring:
     initial-size: 1
     min-idle: 1
     max-active: 20
-    #获取连接等待超时时间
+    #获取连接等待超时时间     
     max-wait: 60000
     #间隔多久进行一次检测，检测需要关闭的空闲连接
     time-between-eviction-runs-millis: 60000

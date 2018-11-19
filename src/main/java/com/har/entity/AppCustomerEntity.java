@@ -1,16 +1,13 @@
 package com.har.entity;
 
 
-import com.baomidou.mybatisplus.annotations.TableName;
-import lombok.AccessLevel;
 import lombok.Data;
-
-import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Proxy;
-import org.springframework.stereotype.Component;
 
-import javax.persistence.*;
-
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.Date;
 

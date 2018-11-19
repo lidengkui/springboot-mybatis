@@ -1,6 +1,5 @@
 package com.har;
 
-import com.har.dto.AppCustomerDto;
 import com.har.entity.AppCustomerEntity;
 import com.har.service.AppCustomerService;
 import com.har.service.query.AppCustomerTask;
@@ -25,7 +24,7 @@ public class HarApplicationTests {
         appCustomerEntity.setCode("C000011");
         appCustomerQueryService.addTask(appCustomerEntity);
         AppCustomerEntity appCustomerEntitys = userService.findById(1L);
-        System.out.println(appCustomerEntitys.toString());
+        System.out.println("appCustomerEntitys"+appCustomerEntitys.toString());
 
     }
     /*@Test

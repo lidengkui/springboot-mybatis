@@ -21,11 +21,11 @@ public class HarApplicationTests {
     private AppCustomerTaskService appCustomerQueryService;
     @Test
     public void findByAppCode() {
-        AppCustomerTask appCustomerDto = new AppCustomerTask();
-        appCustomerDto.setCode("C000011");
-        appCustomerQueryService.addTask(appCustomerDto);
-        AppCustomerEntity appCustomerEntity = userService.findByAppCode("C000011");
-       // System.out.println(appCustomerEntity.toString());
+        AppCustomerTask appCustomerEntity = new AppCustomerTask();
+        appCustomerEntity.setCode("C000011");
+        appCustomerQueryService.addTask(appCustomerEntity);
+        AppCustomerEntity appCustomerEntitys = userService.findById(1L);
+        System.out.println(appCustomerEntitys.toString());
 
     }
     /*@Test

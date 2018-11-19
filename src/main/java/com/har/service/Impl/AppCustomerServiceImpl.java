@@ -22,7 +22,7 @@ public class AppCustomerServiceImpl implements AppCustomerService {
 
     @Override
     public AppCustomerEntity findById(Long id) {
-        return null;
+        return appCustomerDao.getOne(id);
     }
 
 

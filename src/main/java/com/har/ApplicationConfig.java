@@ -16,7 +16,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
 @Configuration
-@EnableJpaRepositories(basePackages = "com.har.dao")
+/*@EnableJpaRepositories(basePackages = "com.har.dao")*/
 @EnableTransactionManagement
 @PropertySource("classpath:application.yml")
 public class ApplicationConfig {
@@ -51,7 +51,7 @@ public class ApplicationConfig {
 
         LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
         factory.setJpaVendorAdapter(vendorAdapter);
-        factory.setPackagesToScan("com.pccb.entity");
+        factory.setPackagesToScan("com.har.entity");
         factory.setDataSource(dataSource());
         factory.afterPropertiesSet();
 
